@@ -2,29 +2,21 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zakładki</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>NOTATNIK DLA HIGH COMMAND</h1>
-        <div class="sketch">
-            <p>WAŻNE KWESTIE ZAPISUJEMY!!</p>
-            <!-- Umieść swoje elementy HTML szkicu tutaj -->
-        </div>
-
-        <h2>Dodaj nową zakładkę</h2>
+        <h1>Zakładki</h1>
         <form id="bookmarkForm">
             <label for="title">Tytuł:</label>
-            <input type="text" id="title" name="title" required><br>
+            <input type="text" id="title" name="title" required>
             <label for="note">Notatka:</label>
-            <textarea id="note" name="note" rows="4" cols="50" required></textarea><br>
-            <button type="submit">Dodaj Zakładkę</button>
+            <textarea id="note" name="note" rows="4" cols="50" required></textarea>
+            <button type="submit">Dodaj zakładkę</button>
         </form>
-
-        <div id="bookmarks">
-            <!-- Tutaj będą wyświetlane dodane zakładki -->
-        </div>
+        <div id="bookmarks" class="bookmarks"></div>
     </div>
 
     <script src="script.js"></script>
